@@ -23,7 +23,7 @@ export function DogModel({
   useAnimateDog, 
   ...props
 }: DogModelProps) {
-  const { nodes, materials } = useGLTF('/models/dog/dog2.gltf')
+  const { nodes, materials } = useGLTF('./models/dog/dog2.gltf')
   const groupRef = useRef<Group>(null)
   const headMeshRef = useRef<Mesh>(null)
   
@@ -78,4 +78,4 @@ export function DogModel({
   )
 }
 
-useGLTF.preload('/models/dog/dog2.gltf')
+useGLTF.preload('./models/dog/dog2.gltf')
