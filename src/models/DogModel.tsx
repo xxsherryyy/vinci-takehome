@@ -78,4 +78,4 @@ export function DogModel({
   )
 }
 
-useGLTF.preload('/dog2.gltf')
+useGLTF.preload('/models/dog/dog2.gltf')
